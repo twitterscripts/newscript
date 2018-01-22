@@ -1,22 +1,49 @@
 <html>
     <head>
-        <title>Django Girls blog</title>
+        <title>Operation CC</title>
     </head>
-    <body>
-        <div>
-            <h1><a href="">Django Girls Blog</a></h1>
-        </div>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+    <style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">Mon second post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+td, th {
+    text-align: left;
+    padding: 8px;
+}
+
+
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+
+    <body bgcolor="#E6E6FA">
+ <div>
+    <h1><a href="/">** Operation CC Official Thread **</a></h1>
+</div>
+
+{% for post in posts %}
+
+<table>
+  <tr border-radius = "10px", 0, 0, 0>
+    <th BGCOLOR="#f44242", colspan=2><font color="white">{{ post.title }}</font></th>
+  </tr>
+
+  <tr>
+    <td BGCOLOR="#ffffff", colspan=2>{{ post.text|linebreaksbr }}</td>
+  </tr>
+
+  <tr>
+    <td BGCOLOR="#360060", border-radius: 15px, 15px, 0px, 0px;><font color="white"><b>Publié:</b></td>
+    <td BGCOLOR="#290030"><font color="white">{{ post.published_date }}</font></td>
+  </tr>
+</table>
+<br>
+{% endfor %}
     </body>
 </html>

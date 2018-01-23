@@ -1,0 +1,154 @@
+a:hover { 
+  text-decoration: none;
+}
+
+h1 a {
+    color: #ffffff;
+    font-family: 'Lobster';
+    font-size: 150%;
+    line-height: 0.2;
+}
+
+
+
+h1 a:hover {
+    color: #ffffff;
+    font-family: 'Lobster';
+    font-size: 150%;
+    line-height: 0.2;
+}
+
+.page-header {
+    background-color: #C1007D;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px;
+    width:100%;
+}
+.containertitre {
+    background-color: #C1007D;
+    float:left;
+    width:28%;
+}
+
+#topmenub { 
+  margin-top: 0px;
+  padding: 15px;
+  background-color: #C1007D;
+  float:right;
+  width:72%
+}
+
+.remplissageb {
+    background-color: #C1007D;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 1px;
+    width:100%;
+}
+.actual-page {
+    background-color: #eae8f7;
+    margin-top: 0;
+    padding: 15px;
+  }
+
+.newposting {
+    color: #ffffff;
+    font-family: 'Josefin Slab', serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 270%;
+}
+
+#boutonb { 
+  color: #000000;
+  margin-top: 0px;
+}
+
+.bouttong {
+    border: none;
+    display: inline-block;
+    padding: 0px 18px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    border-radius: 40px;
+    box-sizing: border-box;
+}
+
+.bouttong:hover {
+  background-color: #000000;
+  color: #3a7999;
+  box-shadow: inset 0 0 0 3px #000000;
+}
+
+
+.couleurg {
+    color: #000000!important;
+    background-color: #ffffff!important;
+}
+
+.portelogo {
+    float:right;
+    width:28%;
+}
+
+#logob {
+    float:right;
+}
+
+.soustitreb {
+    color: #ED6FC1;
+    font-family: 'Josefin Slab', serif;
+    font-size: 160%;
+    line-height: 0.13;
+}
+
+.pageback {
+  background-color: #eae8f7;
+}
+
+.titleb {
+  color: #FFFFFF !important;
+  width: 65%;
+  background-color: #f44242;
+  border-radius: 6px 6px 0px 0px;
+  text-align: center;
+}
+
+.textb {
+  color: #000000;
+  width: 65%;
+  background-color: #ffffff;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.newpostb {
+    font-family: 'Josefin Slab', serif;
+    font-size: 250%;
+    padding-left: 5%;
+}
+.newpostb2 {
+    font-family: 'Josefin Slab', serif;
+    font-size: 120%;
+    padding-left: 5%;
+}
+.publishedb {
+  color: #ffffff;
+  width: 25%;
+  background-color: #4d1c70;
+  border-radius: 0px 0px 0px 6px;
+  text-align: center;
+}
+
+.dateb {
+  color: #ffffff;
+  width: 75%;
+  background-color: #2c0d42;
+  border-radius: 0px 0px 6px 0px;
+}

@@ -1,0 +1,52 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Operation CC</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Supermercado+One" rel="stylesheet">
+    </head>
+
+    <style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 65%;
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+}
+
+
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+    <body class=pageback>
+
+        <div class="page-header">
+            <div class="containertitre">
+                <h1><a href="/">Le Wall.</a></h1>
+                <h2 class="soustitreb">Just Write Whatever You Want.</h2>
+            </div>
+            <div id="topmenub" class="newposting">
+                <a class="bouttong couleurg" href="{% url 'post_new' %}" class="newposting">+</a>
+            </div>
+            <div>
+            <a class="remplissageb"></a>
+            </div>     
+        </div>
+
+
+
+  {% block content %}
+  {% endblock %}
+
+    </body>
+</html>
+

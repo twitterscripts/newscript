@@ -94,12 +94,38 @@ h1 a:hover {
 }
 
 .portelogo {
-    float:right;
-    width:28%;
+    position: fixed;
+    bottom: 45%;
+    right: 5%;
+    margin-right: 6%;
 }
 
 #logob {
+    position: fixed;
+    bottom: 45%;
+    right: 5%;
     float:right;
+    margin-right: 6%; 
+}
+
+#textlogoc {
+    margin-left: 60%; 
+    position: fixed;
+    bottom: 15%;
+    right: 5%;
+    width:30%;
+    font-family: 'Josefin Slab', serif;
+    font-size: 160%;
+}
+
+
+.textlogo {
+    position: fixed;
+    bottom: 15%;
+    right: 5%;
+    width:30%;
+    font-family: 'Josefin Slab', serif;
+    font-size: 160%;
 }
 
 .soustitreb {

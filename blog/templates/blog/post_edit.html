@@ -3,7 +3,20 @@
 {% block content %}
     <h1 class="newpostb">Post Something</h1>
     <form method="POST" class="newpostb2">{% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="bouttong couleurg">Send</button>
+   {% for field in form  %}
+      <div>
+       {{ field.label_tag }}
+      </div>
+      <div class="battleb" id="fieldb">
+      {{ field }}
+      <br><br>
+      </div>
+
+    {% endfor %}
+
+        <button type="submit" class="bouttong couleurbb" onclick="window.location.href = '/';">Go Back</button>
+        <button type="submit" class="bouttonbb couleurg">Le Send</button>
+
     </form>
+
 {% endblock %}

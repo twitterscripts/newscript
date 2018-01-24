@@ -2,9 +2,9 @@
 
 {% block content %}
 
-  <div class="actual-page">
+  <div class="actual-pageb">
             <div>
-                <h2 id="soustitrec" class="soustitrec"> ✔ <b>Post publié ! </b></h2>
+                <h2 id="soustitrec" class="soustitrec"> ✔ <b>Posted ! </b></h2>
                 <br>
             </div>
   <table>
@@ -25,6 +25,10 @@
     </tr>
 
   </table>
+<br>
+          <button type="submit" class="bouttonbbb couleurbbb largeb" id="largeb" onclick="window.location.href = '/';">Yeah, cool story bro. Take me back to the thread.</button>
+
+          <button type="submit" class="bouttong couleurg largeb" onclick="window.location.href = '{% url 'post_new' %}';">I want to write another one.</button>
     </div>
 
 {% endblock %}

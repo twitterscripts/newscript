@@ -3,7 +3,10 @@
 {% block content %}
 
   <div class="actual-page">
-
+            <div>
+                <h2 id="soustitrec" class="soustitrec"> ✔ <b>Post publié ! </b></h2>
+                <br>
+            </div>
   <table>
     <tr>
       <th class="titleb", colspan=2><a id="rocket" class="titleb" href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></th>
@@ -16,7 +19,7 @@
 
     <tr>
     {% if post.published_date %}
-      <td class="publishedb"><b>Publié </b></td>
+      <td class="publishedb">Publié par <b>{{ post.author }}</b></td>
       <td class="dateb">{{ post.published_date }}</td>
     {% endif %}
     </tr>

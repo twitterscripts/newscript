@@ -109,6 +109,20 @@ h1 a:hover {
     line-height: 0.13;
 }
 
+#soustitrec {
+    color: #00b100;
+    font-family: 'Supermercado One', cursive;
+    font-size: 260%;
+    line-height: 0.13;
+}
+
+.soustitrec {
+    color: #00b100;
+    font-family: 'Supermercado One', cursive;
+    font-size: 260%;
+    line-height: 0.13;
+}
+
 .pageback {
   background-color: #eae8f7;
 }

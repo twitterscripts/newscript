@@ -25,7 +25,7 @@ SECRET_KEY = '%i+9)gqvz4=y1x+-yhjny8sr)(u_7bu+nfh(=+&p(j51a3p27t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'kiziltims.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'kiziltims.pythonanywhere.com', 'twitterscripts.pythonanywhere.com']
 
 
 # Application definition

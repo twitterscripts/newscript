@@ -1,7 +1,7 @@
 {% load staticfiles %}
 <html>
     <head>
-        <title>Operation CC</title>
+        <title>Twitter Scripts</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
@@ -32,20 +32,19 @@ tr:nth-child(even) {
 </style>
     <body class=pageback>
 
-        <div class="page-header">
-            <div class="containertitre">
-                <h1><a href="/">Le Frog Wall.</a></h1>
-                <h2 class="soustitreb">Just Write Whatever You Want.</h2>
+        <div class="page-header clearfix">
+            <div class="containertitre clearfix">
+                <h1><a href="/">TwitterScript</a></h1>
+                <h2 class="soustitreb">Accelerate eBrandValue throught social.</h2>
             </div>
             <div id="topmenub" class="newposting">
-                <a class="bouttongpp couleurgpp" href="{% url 'post_new' %}" class="newposting">+</a>
+                <a class="bouttonall" href="{% url 'the_script' %}">Scripts</a>
+                <a class="bouttongauche" href="/">Feed</a>
+                <a class="bouttondroit" href="{% url 'post_new' %}">+</a>
+                <a class="bouttongauche" href="{% url 'report_list' %}">Bug Reports</a>
+                <a class="bouttondroit" id="boutondr" href="{% url 'report_new' %}">+</a>
             </div>
-            <div>
-            <a class="remplissageb"></a>
-            </div>     
         </div>
-
-
 
   {% block content %}
   {% endblock %}

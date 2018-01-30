@@ -17,3 +17,17 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+class BugReport(models.Model):
+    authorr = models.CharField(max_length=20)
+    titler = models.CharField(max_length=200)
+    textr = models.TextField()
+    created_dater = models.DateTimeField(default=timezone.now)
+    published_dater = models.DateTimeField(blank=True, null=True)
+
+    def publishr(self):
+        self.published_dater = timezone.now()
+        self.save()
+
+    def __str__(self):
+        return self.titler

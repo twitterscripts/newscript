@@ -1,9 +1,9 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <h1 class="newpostb">Add to the Feed.</h1>
-    <form method="POST" class="newpostb2">{% csrf_token %}
-   {% for field in form  %}
+    <h1 class="newpostwar">Report a Bug.</h1>
+    <form method="POST" class="newpostwar2">{% csrf_token %}
+   {% for field in report %}
       <div>
        {{ field.label_tag }}
       </div>

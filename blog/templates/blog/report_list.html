@@ -1,0 +1,38 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+{% load staticfiles %}
+
+    <div class="portelogowar">
+      <br>
+      <br>
+      <img id="logowar" src="{% static "images/warning.png" %}" alt="logo" width="15%" height="28%"/>
+
+    </div>
+    <div class="textlogo"> 
+      <h1 id="textlogowar"><b>Reported Bugs List </b><br>Keep Calm and <br> Report Bugs.</h1>
+    </div> 
+
+  {% for report in reports %}
+  <div class="actual-page">
+
+  <table>
+    <tr>
+      <th class="titlerep", colspan=2><a id="rocket" class="titlerep">{{ report.titler }}</a></th>
+    </tr>
+
+    <tr>
+      <td class="textb", colspan=2>{{ report.textr|linebreaksbr }}</td>
+    </tr>
+
+    <tr>
+      <td class="publishedrep">Publié par <b>{{ report.authorr }}</b></td>
+      <td class="daterep">{{ report.published_dater }}</td>
+    </tr>
+
+  </table>
+    </div>
+  {% endfor %}
+
+
+{% endblock %}

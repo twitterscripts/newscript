@@ -17,17 +17,17 @@
 
   <table>
     <tr>
-      <th class="titleb", colspan=2><a id="rocket" class="titleb" href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></th>
+      <th class="titleb ombre1", colspan=2><a id="rocket" href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></th>
     <!--  -->
     </tr>
 
     <tr>
-      <td class="textb", colspan=2>{{ post.text|linebreaksbr }}</td>
+      <td class="textb ombre1", colspan=2>{{ post.text|linebreaksbr }}</td>
     </tr>
 
     <tr>
-      <td class="publishedb">Publié par <b>{{ post.author }}</b></td>
-      <td class="dateb">{{ post.published_date }}</td>
+      <td class="publishedb ombre1">Publié par <b>{{ post.author }}</b></td>
+      <td class="dateb ombre1">{{ post.published_date }}</td>
     </tr>
 
   </table>
